@@ -13,11 +13,11 @@ func getMessageWithRetriesForPlan(plan string, messages [3]string) ([]string, er
 	freeMessages := messages[:2]
 	proMessages := messages[:]
 
-	if plan == "free" {
+	if plan == planFree {
 		return freeMessages, nil
 	}
 
-	if plan == "pro" {
+	if plan == planPro {
 		return proMessages, nil
 	}
 
